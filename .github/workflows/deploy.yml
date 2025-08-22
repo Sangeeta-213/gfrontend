@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master   # or master, whichever branch you are using
+      - main   # or master, whichever branch you are using
 
 jobs:
   build:
@@ -12,6 +12,7 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
+    
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
